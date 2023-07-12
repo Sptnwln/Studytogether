@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image:url(./aaa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+}
+.pertama{
+    margin: 60px auto;
+    width: 600px;
+}
+
+.pertama li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: bisque;
+}
+
+.pertama li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label::before{
+    content: '';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.pertama .content{
+    color:darkslategray ;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.pertama input[type="radio"]:checked + label +.content{
+    max-height: 400px;
+    padding: auto;
+}
+
+table{
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+.isi{
+    color: blue;
+    cursor: pointer;
+}
+table{
+    text-align: center;
+}
